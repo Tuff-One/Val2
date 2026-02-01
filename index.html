@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For You 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop>
+    <!-- Replace this with your OWN hosted audio file if needed -->
+    <source src="https://files.catbox.moe/2b6l9h.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container" id="app">
+
+    <!-- LANDING PAGE -->
+    <div id="landing">
+      <h1>Baby 💕</h1>
+      <p>
+        Since it’s February,<br />
+        I would like to ask you this very important question…
+      </p>
+      <button id="startBtn">Continue 💌</button>
+    </div>
+
+    <!-- VALENTINE PAGE -->
+    <div id="valentine" class="hidden">
+      <img
+        id="mainImage"
+        src="https://media.tenor.com/VIChDQ6ejRQAAAAj/jumping-bear-hearts-no-png.gif"
+        alt="cute gif"
+      />
+
+      <h1 id="question">Will you be my Valentine? 💘</h1>
+
+      <div class="buttons">
+        <button id="yesBtn">Yes 💕</button>
+        <button id="noBtn">No 💔</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
