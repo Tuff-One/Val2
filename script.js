@@ -37,10 +37,17 @@ startBtn.addEventListener("click", () => {
   bgMusic.play().catch(() => {});
 });
 
-// YES BUTTON
-// YES BUTTON
+// YES BUTTON - WITH CELEBRATION MUSIC
 yesBtn.addEventListener("click", () => {
   launchConfetti();
+  
+  // Stop the background music
+  bgMusic.pause();
+  bgMusic.currentTime = 0;
+  
+  // Play celebration music
+  const celebrationMusic = new Audio('https://image2url.com/r2/default/audio/1770033145321-5ca40041-4f99-49e0-864f-6e04cbc1655c.mp3');
+  celebrationMusic.play();
 
   app.innerHTML = `
     <img 
@@ -49,7 +56,8 @@ yesBtn.addEventListener("click", () => {
     />
     <div class="celebration">Yay!!! 💖🎉</div>
     <img 
-      src=https://github.com/Tuff-One/Val2/blob/main/yayy.png?raw=true  <!-- REPLACE with your actual PNG URL -->
+      src="https://github.com/Tuff-One/Val2/blob/main/yayy.png?raw=true"
+    />
     <p style="font-size:20px; margin-top:20px;">
       I knew you would say yes to me mama 😌💘
       I love you my PRINCESS!!!
@@ -91,7 +99,3 @@ function launchConfetti() {
 const script = document.createElement("script");
 script.src = "https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js";
 document.body.appendChild(script);
-
-
-
-
