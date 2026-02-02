@@ -38,6 +38,7 @@ startBtn.addEventListener("click", () => {
 });
 
 // YES BUTTON
+// YES BUTTON
 yesBtn.addEventListener("click", () => {
   launchConfetti();
 
@@ -47,7 +48,12 @@ yesBtn.addEventListener("click", () => {
       style="width:220px;"
     />
     <div class="celebration">Yay!!! 💖🎉</div>
-    <p style="font-size:20px;">
+    <img 
+      src=https://github.com/Tuff-One/Val2/blob/main/yayy.png?raw=true  <!-- REPLACE with your actual PNG URL -->
+      style="width:200px; margin-top:15px; border-radius:10px; box-shadow: 0 4px 8px rgba(0,0,0,0.2);"
+      alt="Our picture"
+    />
+    <p style="font-size:20px; margin-top:20px;">
       I knew you would say yes to me mama 😌💘
       I love you my PRINCESS!!!
     </p>
@@ -88,4 +94,5 @@ function launchConfetti() {
 const script = document.createElement("script");
 script.src = "https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js";
 document.body.appendChild(script);
+
 
