@@ -1,13 +1,17 @@
 // NO button phrases (your exact list + reordered cleanly)
 const noPhrases = [
   "No 💔",
+  "No?",
   "uhmmm.. Baby are you sure? 😪",
   "Think about it one more time",
   "If not for me, for baby Atu-Bear 🧸",
-  "What if I faint? 🥲",
+  "What if I faint? ",
   "But I'm your sweet boy 😔",
   "But we'd be so cute together, Baby! 💕",
   "What about a maybe?",
+  "Ohh c'mon",
+  "I know you wanna say yes",
+  "Last chance babe",
   "Please I'm fragile 😢"
 ];
 
@@ -44,7 +48,8 @@ yesBtn.addEventListener("click", () => {
     />
     <div class="celebration">Yay!!! 💖🎉</div>
     <p style="font-size:20px;">
-      I knew you always loved me mama 😌💘
+      I knew you would say yes to me mama 😌💘
+      I love you my PRINCESS!!!
     </p>
   `;
 });
@@ -83,3 +88,4 @@ function launchConfetti() {
 const script = document.createElement("script");
 script.src = "https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js";
 document.body.appendChild(script);
+
